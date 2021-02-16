@@ -79,7 +79,7 @@
         document.getElementById("langugage").append(liff.getlanguage())
         document.getElementById("version").append(liff.getversion())
         document.getElementById("accessToken").append(liff.getaccessToken())
-        document.getElementbyID("isInClient").append(liff.isinClient())
+        document.getElementById("isInClient").append(liff.isinClient())
         if (liff.isInClient()){
             document.getElementById("btnLogout").style.display = "none"
         }else{
