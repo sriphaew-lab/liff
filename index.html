@@ -72,7 +72,7 @@
     }
 
     async function getUserProfile() {
-        cost profile = await liff.getProfile()
+        const profile = await liff.getProfile()
         document.getElementById("pictureURL").src = profile.pictureUrl
         document.getElementById("userid").append(profile.userid)
         document.getElementById("statusMessage").append(profile.statusMessage)
@@ -95,7 +95,6 @@
     }
 
     async function main() {
-//      alert("LINE Developers x Skooldio")
       await liff.init({ liffId: "1655673266-1ggZEkYy" })
       getEnvironment()
       getUserProfile()
