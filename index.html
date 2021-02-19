@@ -88,6 +88,7 @@
         document.getElementById("isInClient").append(liff.isInClient())
         document.getElementById("accessToken").append(liff.getAccessToken())
         if ( liff.isInClient() ){
+            alert(document.getElementById("btnLogout").disabled)
             document.getElementById("btnLogout").disabled = true
         } else {
             document.getElementById("btnClose").disabled = true
