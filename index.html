@@ -89,9 +89,9 @@
         document.getElementById("accessToken").append(liff.getAccessToken())
         if ( liff.isInClient() ){
             document.getElementById("btnLogout").style.display = "None"
-        } else {
             document.getElementById("btnMsg").style.display = "none"
             document.getElementById("btnScanCode").style.display = "none"
+        } else {
             document.getElementById("btnClose").style.display = "none"
         }
     }
