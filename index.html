@@ -88,14 +88,11 @@
         document.getElementById("isInClient").append(liff.isInClient())
         document.getElementById("accessToken").append(liff.getAccessToken())
         if ( liff.isInClient() ){
-            alert("B1")
-            alert(document.getElementById("btnLogout").style.display)
-            document.getElementById("btnLogout").style.display = "none"
+            document.getElementById("btnLogout").disabled = true
         } else {
-            alert("B2")
-            document.getElementById("btnClose").style.display = "none"
-            document.getElementById("btnMsg").style.display = "none"
-            document.getElementById("btnScanCode").style.display = "none"
+            document.getElementById("btnClose").disabled = true
+            document.getElementById("btnMsg").disabled = true
+            document.getElementById("btnScanCode").disabled = true
         }
     }
 
